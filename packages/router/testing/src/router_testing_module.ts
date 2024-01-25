@@ -39,7 +39,7 @@ function throwInvalidConfigError(parameter: string): never {
  * beforeEach(() => {
  *   TestBed.configureTestingModule({
  *     imports: [
- *       RouterModule.forRoot(
+ *       RouterTestingModule.withRoutes(
  *         [{path: '', component: BlankCmp}, {path: 'simple', component: SimpleCmp}]
  *       )
  *     ]
